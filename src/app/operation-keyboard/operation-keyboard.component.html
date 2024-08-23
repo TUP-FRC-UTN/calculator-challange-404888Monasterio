@@ -1,0 +1,9 @@
+<div class="container">
+    <app-operation-button operator="+" text="+" [values]="values" (operationDone)="onOperationDone($event)"></app-operation-button>
+    <app-operation-button operator="-" text="-" [values]="values" (operationDone)="onOperationDone($event)"></app-operation-button>
+    <app-operation-button operator="*" text="X" [values]="values" (operationDone)="onOperationDone($event)"></app-operation-button>
+    <app-operation-button operator="**" text="^" [values]="values" (operationDone)="onOperationDone($event)"></app-operation-button>
+    <app-operation-button operator="/" text="/" [values]="values" (operationDone)="onOperationDone($event)"></app-operation-button>
+    <app-root-operation-button [values]="values" (operationDone)="onOperationDone($event)"></app-root-operation-button>
+    <button (click)="onClearClicked()">CE</button>
+</div>

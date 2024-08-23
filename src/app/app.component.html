@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Calculadora</h1>
+  <p>Valor 1</p>
+  <input type="number"(input)="onValueAChanged($event)" value="0">
+  <p>Valor 2</p>
+  <input type="number" (input)="onValueBChanged($event)" value="0">
+  <p>Resultado</p>
+  <input type="number" [value]="result" disabled>
+  <app-operation-keyboard (operationDone)="onOperationDone($event)" [values]="[valueA, valueB]"></app-operation-keyboard>
+</div>
